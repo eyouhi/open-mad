@@ -1,0 +1,21 @@
+[application]
+name = "mad-ui"
+default_platform = "desktop"
+out_dir = "dist"
+asset_dir = "assets"
+
+[web.app]
+title = "OPEN MAD"
+
+[web.watcher]
+watch_path = ["src", "assets"]
+
+[desktop]
+# Styling can be injected via CSS files
+# We can use Tailwind if we want
+
+[bundle]
+identifier = "com.liwis.open-mad"
+publisher = "liwis"
+icon = ["assets/icon.icns", "assets/icon.png"]
+resources = ["assets/*"]

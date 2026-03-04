@@ -1,0 +1,24 @@
+[package]
+name = "mad-core"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+tokio = { workspace = true }
+tracing = { workspace = true }
+reqwest = { workspace = true, features = ["json", "stream"] }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+futures-util = "0.3"
+base64 = { workspace = true }
+screenshots = { workspace = true }
+enigo = { workspace = true }
+image = { workspace = true }
+chrono = { workspace = true }
+accessibility = "0.2.0"
+active-win-pos-rs = "0.9.1"
+core-foundation = "0.10"
+core-graphics = "0.25"
+arboard = "3.6.1"
+dispatch = "0.2"
