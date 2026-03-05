@@ -52,8 +52,11 @@ fn main() -> Result<()> {
         }
         Commands::Bundle => {
             println!("Bundling application...");
-            sh.change_dir("crates/mad-ui");
-            cmd!(sh, "dx bundle --platform desktop").run()?;
+            cmd!(
+                sh,
+                "dx bundle --package mad-ui --platform desktop --release"
+            )
+            .run()?;
             println!("Bundle complete!");
         }
         Commands::Run { cli } => {
